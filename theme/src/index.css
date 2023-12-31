@@ -1,0 +1,34 @@
+:root {
+  --body-background: white;
+  --body-color: black;
+  --link-color: navy;
+}
+
+[data-theme='dark']{
+  --body-background: #242424;
+  --body-color: white;
+  --link-color: cyan;
+}
+
+*{
+  transition: all 0.8s ease-in-out;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: var(--body-background);
+}
